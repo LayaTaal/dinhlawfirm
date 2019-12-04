@@ -1,0 +1,47 @@
+.contact-widget {
+	margin: 2rem 0;
+	padding: 2rem;
+	border: 2px solid $primary_color;
+	
+	@media screen and (max-width: #{$breakpoint__md}) {
+		margin-top: 6rem;
+	}
+	
+	h4 {
+		margin-top: calc(-2rem - 13px);
+		background: $body_bg;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	label {
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+	}
+	
+	input, textarea {
+		width: 100%;
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"] {
+		height: 3rem;
+	}
+	
+	input[type="submit"] {
+		display: inline-block;
+		width: auto;
+	}
+	
+	input[type="checkbox"] {
+		display: inline-block;
+		width: auto;
+		margin: 0 1rem 0 0;
+	}
+	
+	span.wpcf7-list-item {
+		margin: 0;
+	}
+}

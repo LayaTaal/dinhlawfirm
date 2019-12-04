@@ -1,0 +1,63 @@
+.btn {
+	text-transform: uppercase !important;
+	display: inline-block !important;
+	letter-spacing: 1px !important;
+	background: $blue_bright !important;
+	color: $white !important;
+	border-radius: 3px;
+	border: 0;
+	transition: 0.2s all !important;
+	padding: 1rem 3rem !important;
+		
+	&:hover {
+		background: tint($blue_bright, 15%) !important;
+	}
+}
+
+.btn--secondary {
+	font-size: 1.25rem;
+}
+
+.mobile-callout {
+  	display: none;
+}
+/* Telephone call button for mobile users */
+@media screen and (max-width: #{$breakpoint__sm}) {
+	.mobile-callout {
+		justify-content: center;
+		position: fixed;
+		z-index: 1001;
+		bottom: 0;
+		left: 0;
+		width: 100vw;
+		background: #fcfcfc;
+		box-shadow: -2px 0 2px rgba(0,0,0,0.25);
+		padding: 1em;
+		
+		>div {
+			display: inline-block;
+			
+			a {
+				color: $black;
+				font-weight: 400;
+			}
+		}
+		
+		.email-callout {
+			padding-right: 10px;
+		}
+		
+		.tel-callout {
+			text-align: right;
+			border-left: 1px solid rgba(0,0,0,0.1);
+			padding-left: 10px;
+		}
+		
+		img {
+			height: 16px;
+			width: auto;
+			vertical-align: middle;
+			padding-right: 5px;
+		}
+	}
+}

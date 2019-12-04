@@ -1,0 +1,377 @@
+/* General */
+.container {
+	padding: $section__padding;
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		max-width: 800px;
+	    margin: 0 auto;
+
+	}	
+}
+
+/* Hero section */
+#hero,
+#heroe {
+	position: relative;
+	height: 100vh;
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		height: 400px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: stretch;
+	}
+}
+/* keyframes for image fade */
+@keyframes fade1 {
+	0% 			{ opacity: 1 }
+	16.667% 	{ opacity: 1 }
+	33.333% 	{ opacity: 0 }
+	50% 		{ opacity: 0 }
+	66.667% 	{ opacity: 0 }
+	83.333% 	{ opacity: 0 }
+	100%		{ opacity: 1 }
+
+}
+@keyframes fade2 {
+	0% 			{ opacity: 0 }
+	16.667% 	{ opacity: 0 }
+	33.333% 	{ opacity: 1 }
+	50% 		{ opacity: 1 }
+	66.667% 	{ opacity: 0 }
+	83.333% 	{ opacity: 0 }
+	100%		{ opacity: 0 }
+}
+@keyframes fade3 {
+	0% 			{ opacity: 0 }
+	16.667% 	{ opacity: 0 }
+	33.333% 	{ opacity: 0 }
+	50% 		{ opacity: 0 }
+	66.667% 	{ opacity: 1 }
+	83.333% 	{ opacity: 1 }
+	100%		{ opacity: 0 }
+}
+
+.hero-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover !important;
+	height: 40vh;
+	  
+	@media screen and (min-width: #{$breakpoint__md}) {
+		left: 50%;
+		right: 0;
+		height: 400px;
+		width: 50%;
+		order: 2;
+	}
+}
+.hero-image1 {
+	background: url('https://dinhlawfirm.com/wp-content/uploads/2019/05/dinh_law_firm_staff_800px.jpg') no-repeat 30% top;
+	animation: fade1 12s infinite;
+	-webkit-animation: fade1 12s infinite;
+	  
+	@media screen and (min-width: #{$breakpoint__md}) {
+		background: url('https://dinhlawfirm.com/wp-content/uploads/2019/05/dinh_law_firm_staff_1600px.jpg') no-repeat 30% top;
+	}
+}
+.hero-image2 {
+	background: url('https://dinhlawfirm.com/wp-content/uploads/2019/05/houston_personal_injury_attorneys_dinh_law_firm_800px.jpg') no-repeat 30% top;
+	animation: fade2 12s infinite;
+	-webkit-animation: fade2 12s infinite;
+	  
+	@media screen and (min-width: #{$breakpoint__md}) {
+		background: url('https://dinhlawfirm.com/wp-content/uploads/2019/05/houston_personal_injury_attorneys_dinh_law_firm_1600px.jpg') no-repeat 30% top;
+	}
+}
+.hero-image3 {
+	background: url('https://dinhlawfirm.com/wp-content/uploads/2019/05/houston_immigration_attorneys_dinh_law_firm_800px.jpg') no-repeat 30% top;
+	animation: fade3 12s infinite;
+	-webkit-animation: fade3 12s infinite;
+	  
+	@media screen and (min-width: #{$breakpoint__md}) {
+		background: url('https://dinhlawfirm.com/wp-content/uploads/2019/05/houston_immigration_attorneys_dinh_law_firm_1600px.jpg') no-repeat 30% top;
+	}
+}
+.hero-content {
+	position: absolute;
+	top: 40vh;
+	height: 60vh;
+	text-align: center;
+	padding: 5rem;
+	color: $white;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	background-color: $primary_color;
+	
+	@media only screen and (min-width: #{$breakpoint__md}) {
+		height: 400px;
+		top: 0;
+		background-size: contain;
+		width: 50%;
+		order: 1;
+		text-align: left;
+	}
+}
+.site-title {
+	font-size: 2.25rem;
+}
+.site-description {
+	display: block;
+	font: 400 1.75rem $body_font;
+	padding-bottom: $spacing__sm;
+}
+/* About section */
+.about-container {
+	text-align: center;
+	padding-bottom: 2rem;
+	
+	.divider--medium {
+		margin: 0 auto;
+		margin-top: 8rem;
+	}
+}
+section#about,
+section#sobre-nosotros,
+section#personal-injury,
+section#lesiones-personales,
+section#immigration,
+section#inmigracion {
+	background: $body_bg;
+}
+.about-tagline {
+	font-size: 2rem;
+	display: block;
+}
+/* Practice Areas */
+.practice-area-wrapper {
+	padding: 2rem;
+	max-width: $max_width;
+	margin: 0 auto;
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: stretch;
+		justify-content: space-around;
+		
+		.practice-area-wrapper__column-one,
+		.practice-area-wrapper__column-two {
+			width: 50%;
+		}
+	}	
+}
+.pa-circle {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 1rem;
+	margin: 1rem;
+	
+	@media screen and (min-width: #{$breakpoint__md})  {
+		margin: 0;
+		position: absolute;
+	}
+}
+.pa-circle--blue {
+	background: $primary_color;
+}
+.pa-circle--red {
+	background: $red;
+}
+.pa-circle--grey {
+	background: $grey_two;
+}
+.pa-circle--black {
+	background: $black;
+}
+@media screen and (min-width: #{$breakpoint__md})  {
+	.pa-circle--blue {
+		top: 50px;
+		left: calc(50% - 75px);
+	}
+	.pa-circle--red {
+		top: 150px;
+		left: calc(50% + 75px);
+	}
+	.pa-circle--grey {
+		top: 250px;
+		left: calc(50% - 75px);
+	}
+	.pa-circle--black {
+		top: 150px;
+		left: calc(50% - 225px);
+	}	
+}
+#personal-injury,
+#lesiones-personales {
+	// Mobile view
+	@media screen and (max-width: #{$breakpoint__md}) {
+		.practice-area-wrapper__column-one {
+			display: flex;
+			flex-flow: row wrap;
+			width: calc(300px + 4rem);
+			margin: 0 auto;
+		}	
+	}
+	// Desktop view
+	@media screen and (min-width: #{$breakpoint__md}) {
+		.practice-area-wrapper__column-one {
+			order: 2;
+			padding-left: 2rem;
+			position: relative;
+		}
+		.practice-area-wrapper__column-two {
+			order: 1;
+			padding-right: 2rem;
+		}
+	}
+}
+#immigration,
+#inmigracion {
+	.practice-area-wrapper__column-one {
+		text-align: center;
+	}
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		.practice-area-wrapper {
+			align-items: center;
+		}
+		.practice-area-wrapper__column-one {
+			order: 1;
+			padding-right: 2rem;
+		}
+		.practice-area-wrapper__column-two {
+			order: 2;
+			padding-left: 2rem;
+		}
+	}
+}
+/* About Our Firm */
+.our-firm-wrapper {
+	padding: 2rem 0 0 0;
+	max-width: 100%;
+	margin: 0 auto;
+	
+	.our-firm-wrapper__column-two {
+		padding: 2rem;
+		background: $grey_one;
+	}
+	.our-firm-wrapper__column-one {
+		background: $grey_one;
+		padding-bottom: 2rem;
+	}
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: stretch;
+		justify-content: space-around;
+		
+		.our-firm-wrapper__column-one,
+		.our-firm-wrapper__column-two {
+			width: 50%;
+			min-height: 512px;
+			padding-bottom: 0;
+		}
+		.our-firm-wrapper__column-one {
+			order: 2;
+			
+			img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.our-firm-wrapper__column-two {
+			order: 1;
+			padding: 4rem;
+			
+			h2 {
+				margin-top: 0;
+			}
+		}
+	}	
+}
+/* Banner section */
+#banner {
+	background: $primary_color;
+	color: $white;
+	position: relative;
+	padding-bottom: 250px;
+}
+.banner-container {
+	text-align: center;
+	
+	p {
+		font-size: 2rem;
+	}
+}
+.text--striking {
+	display: block;
+    font-size: 3rem;
+    font-weight: 800;
+	margin: 2rem 0 3rem;
+	letter-spacing: 1px;
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		font-size: 4rem;
+	}
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  /* set height to pixels if you want angle to change with screen width */
+}
+/* Testimonials section */
+section#testimonials,
+section#testimonios {
+	position: relative;
+	margin-top: -250px;
+}
+.testimonial-box {
+	padding:  2rem;
+	margin: 0 2rem;
+    background: white;
+    box-shadow: 0px 3px 6px tint($primary_color, 52%);	
+    max-width: 800px;
+	    
+	@media screen and (min-width: #{$breakpoint__md}) {
+	    margin: 0 auto;
+	    padding: 2rem 4rem;
+	    
+	    .divider--small {
+		    height: 3px;
+		    width: 100%;
+	    }
+	}
+}
+/* Contact section */
+section#contact-us {
+	margin-top: 8rem;
+	padding: $section__padding;
+	background: $grey_one;
+}
+.contact-container {
+	padding: 0;
+	max-width: 1024px;
+	margin: 0 auto;
+	
+	.column-one-half:first-of-type {
+		padding-bottom: 2rem;
+	}
+	
+	.column-one-half:last-of-type {
+		border: 1px solid $grey_two;
+	}
+}

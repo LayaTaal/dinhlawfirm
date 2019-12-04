@@ -1,0 +1,102 @@
+/*
+	Theme Name: Dinh Law Firm
+	Theme URI: https://github.com/LayaTaal/dinhlawfirm
+	Description: Custom responsive theme for the Dinh Law Firm
+	Version: 1.0.1
+	Author: Jason Zinn
+	Author URI: https://zinnfinity.com
+	Tags: HTML5, CSS3, Responsive
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    VARIABLES
+\*------------------------------------*/
+
+@import 'variables';
+
+/*------------------------------------*\
+    MIXINS
+\*------------------------------------*/
+
+@import 'mixins';
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+@import 'main';
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+@import 'structure';
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+@import './pages/homepage';
+@import './pages/pages';
+@import './pages/about';
+@import './pages/attorneys';
+@import './pages/practice-areas';
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+@import './contact-widget';
+
+/*------------------------------------*\
+    BUTTONS
+\*------------------------------------*/
+
+@import 'buttons';
+
+/*------------------------------------*\
+    ELEMENTS
+\*------------------------------------*/
+
+@import 'elements';
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@import 'typography';
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+@import 'core';
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@import 'print';

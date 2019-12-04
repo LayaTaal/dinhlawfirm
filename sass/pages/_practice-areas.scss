@@ -1,0 +1,17 @@
+.practice-area-page {
+	.column-one-third {
+		img {
+			width: 100%;
+			height: auto;	
+		}
+		
+		@media screen and (min-width: #{$breakpoint__md}) {
+			padding-right: 1em;
+		}
+	}
+	.column-two-thirds {
+		@media screen and (min-width: #{$breakpoint__md}) {
+			padding-left: 1em;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Blairmditc';
+	src: url('./fonts/Blaimim.ttf');
+}
+
+$heading_font: 'Blairmditc', serif;
+$body_font: 'Lato', sans-serif;
+
+$blue_bright: #2699FB; // absolute zeo
+$blue_dark: #354C84; // air force blue
+$grey_one: #EDEDED;
+$grey_two: #96989A;
+$grey_three: #585858;
+$black: #242038; // rich black
+$white: #ffffff; // full white
+$red: #CE3B1A;
+$red_dark: #B53418;
+
+$primary_color: $blue_dark;
+$link_color: $red;
+$link_hover: $red_dark;
+$link_visited: $red_dark;
+$body_color: $black;
+$body_bg: #fcfcfc;
+
+$spacing__sm: 0.5rem;
+$spacing__md: 1rem;
+$spacing__lg: 1.5rem;
+
+$section__padding: 4rem 2rem;
+
+$transition__medium: 0.35s;
+
+$font-size__small: 1rem;
+
+/* breakpoints */
+$breakpoint__sm: 500px;
+$breakpoint__md: 800px;
+$breakpoint__lg: 1024px;
+
+/* sizing */
+$max_width: 1024px;

@@ -1,0 +1,49 @@
+.attorney-image {
+	text-align: center;
+}
+.attorney-contact {
+	margin: 2rem 0;
+	
+	a {
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+.attorney-contact__icon {	
+	margin-right: 5px;
+	
+	img {
+		width: 16px;
+		vertical-align: middle;
+	}
+}
+
+@media screen and (min-width: #{$breakpoint__sm}) {
+	.attorney-image {
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: #{$breakpoint__sm}) {
+	.attorney-content {
+	    display: grid;
+	    grid-template-columns: calc(66.66% - 1rem) calc(33.33% - 1rem);
+	    grid-column-gap: 2rem;
+	    grid-template-rows: 36px auto;
+	    
+	    h1 {
+		    grid-column: 1/3;
+		    grid-row: 1/2;
+	    }
+	    
+	    .attorney-extras {
+		    grid-column: 2/3;
+		    grid-row: 1/3;
+	    }
+	    
+	    .attorney-profile {
+		    grid-column: 1/2;
+		    grid-row: 2/3;
+	    }
+	}
+}

@@ -1,0 +1,62 @@
+.subpage {
+	max-width: 1024px;
+	margin: 0px auto;
+	padding: $section__padding;
+	
+	h1 {
+		color: $blue_dark;
+	}
+}
+.page-header {
+	height: 200px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: left, right;
+	background-color: $primary_color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2rem;
+}
+.page-header__title {
+	font-family: $heading_font;
+	font-size: 2.5rem;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	color: $white;
+	text-align: center;
+}
+.column-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+.column-one-half {
+	width: 100%;
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		width: 50%;
+		
+		&::first-of-type {
+			padding-right: 2rem;
+		}
+		&::last-of-type {
+			padding-left: 2rem;
+		}
+	}
+}
+.column-one-third {
+	width: 100%;
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		width: 33.33%;
+		padding-left: 2rem;
+	}
+}
+.column-two-thirds {
+	width: 100%;
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		width: 66.66%;
+		padding-right: 2rem;
+	}
+}

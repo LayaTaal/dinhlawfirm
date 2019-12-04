@@ -1,0 +1,22 @@
+.contact-page-icon {
+	margin: 1rem 0;
+	
+	img {
+		width: 16px;
+		height: auto;
+		margin: 0 0.5rem 0 0 !important;
+		vertical-align: middle;
+	}
+}
+.divider--small {
+	background: $primary_color;
+	height: 1px;
+	width: 100px;
+	margin: 3rem 0;
+}
+.divider--medium {
+	background: $primary_color;
+	height: 1px;
+	width: 250px;
+	margin: 3rem 0;
+}

@@ -1,0 +1,31 @@
+#about-our-firm {
+	padding-bottom: 4rem;
+}
+.attorney-thumbnails {
+	width: 100%;
+	text-align: center;
+	
+	h2 {
+		text-align: left;
+	}
+}
+.attorney-thumbnails .wp-caption {
+	width: 100% !important;
+	
+	@media screen and (min-width: #{$breakpoint__md}) {
+		max-width: calc(33.33% - 20px);
+	}
+}
+.attorney-thumbnails img {
+	width: 100% !important;
+	height: auto !important;
+}
+.testimonial-container {
+	border-bottom: 1px solid $grey_one;
+	padding: 1rem 0;
+	margin: 1rem 0;
+	
+	&:first-of-type {
+		padding-top: 0;
+	}
+}
